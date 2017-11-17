@@ -2,4 +2,73 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="base_margin">16dp</dimen>
+    <dimen name="half_margin">8dp</dimen>
+
+    <dimen name="text_radius">3dp</dimen>
+    <dimen name="base_padding">10dp</dimen>
+    <dimen name="line_size">0.5dp</dimen>
+    <dimen name="corner_radius">2dp</dimen>
+
+
+    <dimen name="stroke_border">1px</dimen>
+
+    <!--间距-->
+    <dimen name="es_pitch_1">1dp</dimen>
+    <dimen name="es_pitch_2">2dp</dimen>
+    <dimen name="es_pitch_6">-6dp</dimen>
+    <dimen name="es_pitch_24">-24dp</dimen>
+    <dimen name="es_pitch4">4dp</dimen>
+    <dimen name="es_pitch6">6dp</dimen>
+    <dimen name="es_pitch8">8dp</dimen>
+    <dimen name="es_pitch10">10dp</dimen>
+    <dimen name="es_pitch12">12dp</dimen>
+    <dimen name="es_pitch14">14dp</dimen>
+    <dimen name="es_pitch16">16dp</dimen>
+    <dimen name="es_pitch18">18dp</dimen>
+    <dimen name="es_pitch20">20dp</dimen>
+    <dimen name="es_pitch22">22dp</dimen>
+    <dimen name="es_pitch24">24dp</dimen>
+    <dimen name="es_pitch32">32dp</dimen>
+    <dimen name="es_pitch34">34dp</dimen>
+    <dimen name="es_pitch48">48dp</dimen>
+    <dimen name="es_pitch40">40dp</dimen>
+    <dimen name="es_pitch50">50dp</dimen>
+    <dimen name="es_pitch80">80dp</dimen>
+    <dimen name="es_pitch96">96dp</dimen>
+
+    <!-- 新的字号规范 -->
+    <dimen name="es_font10">10sp</dimen>
+    <dimen name="es_font12">12sp</dimen>
+    <dimen name="es_font14">14sp</dimen>
+    <dimen name="es_font16">16sp</dimen>
+    <dimen name="es_font18">18sp</dimen>
+    <dimen name="es_font20">20sp</dimen>
+    <dimen name="es_font24">24sp</dimen>
+    <dimen name="es_font26">26sp</dimen>
+    <dimen name="es_font34">34sp</dimen>
+    <dimen name="es_font60">60sp</dimen>
+
+
+    <!--topic-->
+    <dimen name="activity_top_title_icon_padding16">16dip</dimen>
+    <dimen name="activity_top_title_icon_padding">12dip</dimen>
+    <dimen name="topic_view">180dp</dimen>
+    <dimen name="topic_view2">30dp</dimen>
+    <dimen name="topic_view3">-16dp</dimen>
+    <dimen name="topic_view4">100dp</dimen>
+    <dimen name="topic_view5">350dp</dimen>
+    <dimen name="topic_view380">380dp</dimen>
+    <dimen name="topic_view6">40dp</dimen>
+    <dimen name="topic_view7">250dp</dimen>
+    <dimen name="topic_view8">150dp</dimen>
+    <dimen name="topic_view9">110dp</dimen>
+    <dimen name="topic_view0">190dp</dimen>
+    <dimen name="topic_bottom_action">45dp</dimen>
+    <dimen name="topic_store_tag">60dp</dimen>
+    <dimen name="topic_border_two">2px</dimen>
+    <dimen name="topic_progress">4px</dimen>
+    <dimen name="topic_map">-35dp</dimen>
+    <dimen name="topic_door">105dp</dimen>
+
 </resources>

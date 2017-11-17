@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //打jar包的时候因为代码的不规范，需要避免
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.alibaba:fastjson:1.2.9'
+    // rx 权限请求
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.8.2@aar'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.bigkoo:pickerview:2.1.1'
+}
+//打包jar的代码，构建通过后在右侧gradle中找到需要打包的lib,
+//找到library/Tasks/other/makeJar,双击makeJar生成jar包
+def SDK_BASENAME = "MyTools";
+def SDK_VERSION = "_V1.0.0";
+def sdkDestinationPath = "build";
+def zipFile = file('build/intermediates/bundles/release/classes.jar')
+
+task deleteBuild(type: Delete) {
+    delete sdkDestinationPath + SDK_BASENAME + SDK_VERSION + ".jar"
+}
+
+task makeJar(type: Jar) {
+    from zipTree(zipFile)
+    from fileTree(dir: 'src/main',includes: ['assets/**'])//将assets目录打入jar包
+    baseName = SDK_BASENAME + SDK_VERSION
+    destinationDir = file(sdkDestinationPath)
+}
+
+makeJar.dependsOn(deleteBuild, build)
