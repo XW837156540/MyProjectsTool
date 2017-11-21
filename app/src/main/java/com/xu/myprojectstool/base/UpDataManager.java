@@ -122,7 +122,7 @@ public class UpDataManager {
 
     private void updataDialog() {
 
-        updataDialog = new CustomDialog(context, R.style.MyDialog,R.layout.updata_dialog_one);
+        updataDialog = new CustomDialog(context, com.xu.myprojectstool.R.style.MyDialog,R.layout.updata_dialog_one);
         updataDialog.setGravity(Gravity.CENTER);
         updataDialog.show();
 

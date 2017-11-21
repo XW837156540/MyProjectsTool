@@ -3,23 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xu.myprojectstool.MainActivity">
-
-
-    <ImageView
-        android:id="@+id/imageChoose"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@mipmap/ic_launcher"
-        />
+    tools:context="com.xu.myprojectstool.TimerCheckActivity">
 
     <Button
-        android:id="@+id/btn_second"
+        android:id="@+id/check_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_alignParentBottom="true"
-        android:text="跳转时间选择页"
+        android:text="选择时间"
+        />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_time"
+        android:layout_margin="20dp"
+        android:padding="10dp"
         />
 
 </RelativeLayout>

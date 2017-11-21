@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         minSdkVersion 15
@@ -37,7 +37,7 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile 'com.bigkoo:pickerview:2.1.1'
+//    compile 'com.bigkoo:pickerview:2.1.1'
 }
 //打包jar的代码，构建通过后在右侧gradle中找到需要打包的lib,
 //找到library/Tasks/other/makeJar,双击makeJar生成jar包
